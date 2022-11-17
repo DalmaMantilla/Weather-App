@@ -1,0 +1,61 @@
+.app {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;   
+}
+
+
+.bkg { /*Armo y doy estilos al fondo borrosa que va al medio*/
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(16px); /*es la borrosidad*/ 
+  background-color: #42303077;
+}
+
+
+.container {
+  width: 80vw;
+  height: 80vh;
+  margin: 10vh 10vw;
+  top: 0;
+  overflow: hidden; 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50vh 20vh; 
+  justify-content: center;
+  padding-top: 3.125rem ;
+}
+
+
+.citiesContainer {
+  display: flex;
+  height: 25vh;
+  background-color: #ffffff54;
+  backdrop-filter: blur(18px);
+  justify-content: space-between;
+  overflow: hidden;
+  padding-top: .5rem;
+}
+
+
+.app, /*Estas 2 clases tienen estos atributos en comun*/
+.container { 
+  background-image: url('./bkg-clima/clima.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-radius: 1.5rem;
+}
+
+
+@media only screen and(max-width: 40.625rem) {
+  .citiesContainer {
+    display: grid;
+  }
+
+  .container {
+    grid-template-rows: 0vh 0vh; 
+   
+  }
+}

@@ -1,0 +1,131 @@
+.card { /*Cada card*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  color: #ffffff; 
+  height: max-content;
+}
+
+
+.card + .card { /*linea q divide una card de otra card*/
+  border-left: solid 2px #0000001e;
+}
+
+
+.card > img { /*Si la clase card tiene como hijo(si o si hijo, no nieto) un elemento imagen, aplico ese estilo*/
+  width: 4rem;
+  height: 3rem;
+}
+
+
+.card > span {
+  margin-top: 0.3rem;
+}
+
+/*grid: es como una planilla de excel(cuadritos de filas y columnas) para guardar cosas dentro
+flex: coloca una elemento al aldo del otro, de forma vertical u horizontal*/
+
+.primary {  /*Defino estilo de la ciudad q q aparece primero (con iconos grandes) lo especifico xq es primario*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5vh 15vh;
+  width: 20rem;
+  padding: 0 0.5rem;
+}
+
+
+.primary > span { /*Mueve el nombre de la ciudad de lugar. span tiene los estilos de primary y aparte le defino 2 mas: */
+  margin-top: 0.6rem;
+  grid-column: 1 / span 2; /* "1" Indica q es span(hijo) este en la 1º columna de la grilla*/
+                          /* "span 2" indica q ese espan use 2 columnas(usa columna 1 y 2)*/
+}
+
+
+.primary > img { /*Si dentro de primary hay una imagen, q tenga los sgte:*/
+  width: 6rem;
+  height: 6rem;
+}
+
+
+.name { /*nombre de las cuidades*/
+  background-color: #0000005e;
+  padding: .25rem 0.65rem;
+  /* border-radius: 9999px; */
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+
+.temp { /*Temperatura de cada card*/
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  justify-content: center;
+  text-align: center;
+  width: 3rem; /*ancho*/
+  height: 2rem /*alto*/
+ 
+}
+
+
+.temp + .temp { /*Si hay otra temperatura a la der, agrego un margin. Se usa para poner un border entre elementos continuos(es como un separador)*/
+  margin-left: 1rem;
+}
+
+
+.temps {
+  display: flex;
+}
+
+
+.button { /*El boton + */
+  border: solid 2px transparent;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  width: 1.5rem;
+  padding: 0;
+  height: 1.5rem;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.25s, color 0.25s ; 
+  cursor: pointer;
+  color: #ffffff; 
+  margin-left: 0.5rem;
+  margin-right: -0.5rem;
+  
+  
+}
+
+.button:hover { /*se transparenta al posicionar el cursor*/
+  background-color: #ffffffab;
+  color: #f8485e; 
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+/* .card {
+  margin: 20px;
+  width: 18rem;
+}
+
+.card-title {
+  margin-bottom: 15px;
+}
+
+#closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+} */

@@ -1,0 +1,45 @@
+.searchBar { /*cuadro del buscador*/
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+
+.input {/*texto dentro del buscador searchBar*/
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 300; /*el 300 es xq me fije el las fuentes q importe en la clase global "index.css" */
+    width: 20rem;
+}
+
+
+.input:focus {
+    outline: none;
+}
+
+
+.input::placeholder {
+    color: #fdf9f9ef;
+}
+
+
+.button { /*El boton + */
+    border: solid 2px transparent;
+    border-radius: 9999px;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.25s;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
+.button:hover { /*se transparenta al posicionar el cursor*/
+    background-color: #ffffffc5;
+}
