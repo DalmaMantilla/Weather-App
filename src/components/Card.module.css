@@ -55,6 +55,7 @@ flex: coloca una elemento al aldo del otro, de forma vertical u horizontal*/
   /* border-radius: 9999px; */
   border-radius: 12px;
   font-weight: 600;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
 }
@@ -66,9 +67,10 @@ flex: coloca una elemento al aldo del otro, de forma vertical u horizontal*/
   width: 3rem;
   justify-content: center;
   text-align: center;
+  font-size: 0.9rem;
   width: 3rem; /*ancho*/
-  height: 2rem /*alto*/
- 
+  height: 2.5rem; /*alto*/
+  
 }
 
 
@@ -88,8 +90,8 @@ flex: coloca una elemento al aldo del otro, de forma vertical u horizontal*/
   display: flex;
   justify-content: center;
   width: 1.5rem;
-  padding: 0;
   height: 1.5rem;
+  padding: 0;
   align-items: center;
   background-color: transparent;
   transition: background-color 0.25s, color 0.25s ; 
@@ -105,6 +107,63 @@ flex: coloca una elemento al aldo del otro, de forma vertical u horizontal*/
   background-color: #ffffffab;
   color: #f8485e; 
 }
+
+
+
+/*----------------------------------------MOVILE------------------------------------------*/
+@media screen and (max-width: 380px) { 
+  .card {
+    width: 7rem;
+  }
+
+  .primary {
+    margin: auto;
+  }
+
+  .name {
+    font-size: 0.7rem;
+  }
+
+  .button {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 780px) { 
+  .primary {
+    grid-template-rows: 5vh 10vh;
+    padding: 0 2.2rem;
+  }
+
+  .temp {
+    font-size: 0.8rem;
+  }
+
+   .button {
+    margin-left: 0.1rem;
+  }
+}
+
+
+
+@media screen and (max-width: 1100px) { 
+  
+  .card:nth-child(3) {
+    border-left: none;
+  }
+  
+  .primary {
+    margin: 0 auto 0 auto;
+  }
+  
+}
+
+
+
+
 
 
 

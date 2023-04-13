@@ -17,22 +17,22 @@ export default function SearchBar({onSearch}) {
   };
   
     return (
-    <div className={styles.searchBar}> 
-      <input className={styles.input} 
-        id="searchInput"
-        placeholder="Agregar una ciudad..."
-        autoComplete='off' //Elimina el estilo por defecto del navegador y MANTIENE el q hice yo
-        value={search} //Value: Capta el valor q se le ingresa al seach para buscar esa ciudad
-        onChange={(e) => setSearch(e.target.value)}
-        onKeyPress={(e) => { //busca usando enter
-          if(e.key === "Enter") handleOnSearch();
-        }}
-      />
-      <button className={styles.button} 
-        onClick={handleOnSearch}>
-        <IoAdd/>
-      </button> 
-    </div>
+      <div className={styles.searchBar}> 
+        <input className={styles.input} 
+          id="searchInput"
+          placeholder="Buscar una ciudad..."
+          autoComplete='off' //Elimina el estilo por defecto del navegador y MANTIENE el q hice yo
+          value={search} //Value: Capta el valor q se le ingresa al seach para buscar esa ciudad
+          onChange={(e) => setSearch(e.target.value)}
+          onKeyPress={(e) => { //busca usando enter
+            if(e.key === "Enter") handleOnSearch();
+          }}
+        />
+        <button className={styles.button} 
+          onClick={handleOnSearch}>
+          <IoAdd/>
+        </button> 
+      </div>
   )
 };
 

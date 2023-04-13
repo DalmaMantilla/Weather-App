@@ -8,9 +8,11 @@
 .input {/*texto dentro del buscador searchBar*/
     background-color: transparent;
     border: none;
-    font-size: 1.8rem;
-    font-weight: 300; /*el 300 es xq me fije el las fuentes q importe en la clase global "index.css" */
+    color: #ffffff;
+    font-size: 4vmin;
+    font-weight: 500; /*el 300 es xq me fije el las fuentes q importe en la clase global "index.css" */
     width: 20rem;
+    text-shadow: 0.5px 0px 4px rgb(78, 71, 71);
 }
 
 
@@ -24,12 +26,12 @@
 }
 
 
-.button { /*El boton + */
+.button { 
     border: solid 2px transparent;
     border-radius: 9999px;
     width: 3rem;
     height: 3rem;
-    font-size: 2.1875rem;
+    font-size: 6vmin;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,5 +43,47 @@
 
 
 .button:hover { /*se transparenta al posicionar el cursor*/
-    background-color: #ffffffc5;
+    background-color: #0000005e;
 }
+
+
+
+/*----------------------------------------MOVILE------------------------------------------*/
+@media screen and (max-width: 1100px) { 
+
+    .input {
+        width: 20rem;
+    }
+
+    .searchBar { 
+        margin-top: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+    .input {
+        width: 14rem;
+    }
+
+    .searchBar { 
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 380px) { 
+
+    .input {
+        width: 8rem;
+    }
+
+    .button {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+
