@@ -16,7 +16,7 @@ function App() {
     if(data.length > 3) {
       // alert("No puedes agregar mas ciudades.")
       Swal.fire({
-        // icon: 'error',
+        icon: 'error',
         title: '¡No se puede agregar mas de 4 ciudades!',
         width: '15em',
     })
