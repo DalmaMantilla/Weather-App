@@ -40,7 +40,7 @@ export default function fetchCity(ciudad, setData) {
         } else {
             // alert("Ciudad no encontrada");
             Swal.fire({
-                // icon: 'error',
+                icon: 'error',
                 title: '¡Ciudad no encontrada!',
                 width: '15em',
             })
