@@ -5,7 +5,7 @@ configurar y utilizar nuestra aplicación.
 <h2> Descripcion </h2>
 
 Weather App, es una aplicación sencilla que utiliza una API externa 
-https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key},
 para obtener datos climáticos actualizados. Esta aplicación te permite obtener información precisa sobre las condiciones climáticas de
 diferentes ubicaciones en tiempo real.
 
